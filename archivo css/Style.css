@@ -71,6 +71,40 @@ html{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+}
+
+.caja {
+    margin: 180px 15px;
+    width: 150px;
+    height: 150px;
+    background: blueviolet;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 150px;
+    transition: all 2s;
+}
+
+.caja:nth-child(1):hover {
+    transform: translateX(-100px);
+}
+
+
+.caja:nth-child(2):hover {
+    transform:rotate(400grad)
+}
+
+.caja:nth-child(3):hover {
+    transform:scaleY(2);
+}
+
+.caja:nth-child(4):hover {
+    transform:skewX(30deg);
+}
+
 body {
     background: rgb(187,187,187);
 background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(96,96,96,1) 50%, rgba(61,60,61,1) 100%);
