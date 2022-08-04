@@ -10,10 +10,10 @@ html{
 
 #color {
     color:rgb(0, 0, 0);
-    background-color: gray;
     text-align: center;
     text-align: center;
     font-weight: 900;
+    font-size: 70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 5px 5px 5px #ccc;
     animation-duration: 3s;
@@ -21,6 +21,8 @@ html{
     animation-delay: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    background: rgb(102,43,135);
+    background: linear-gradient(90deg, rgba(102,43,135,1) 0%, rgba(163,138,163,1) 50%, rgba(185,187,187,1) 100%);
 }
 
 @keyframes aparecer {
@@ -44,10 +46,11 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
+.contacto {
     text-align: center;
-    font-size: 10mm;
+    font-size: 60px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 30px;
 }
 
 .texto {
@@ -68,7 +71,10 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
+body {
+    background: rgb(187,187,187);
+background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(96,96,96,1) 50%, rgba(61,60,61,1) 100%);
+}
 
 /* //////////////////////////////////////////////////// */
 
@@ -90,13 +96,52 @@ h2 {
     font-size: 10mm;
 }
 
+.parrafo {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 70px;
+    height: 70%;
+}
 
+.subtitulo {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 70px;
+}
+
+.productos{
+    background: rgb(102,43,135);
+    background: linear-gradient(90deg, rgba(102,43,135,1) 0%, rgba(163,138,163,1) 50%, rgba(185,187,187,1) 100%);
+
+}
+
+.lista ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.lista a {
+    text-decoration: none;
+    color: black;
+    background-color: gray;
+    text-transform: capitalize;
+}
+
+.lista a:hover{
+    color: white;
+}
 
 /* //////////////////////////////////////////////////// */
 
 /* contacto */
 
-
+.formulario {
+    font-size: 20px;
+    padding: 200px;
+}
 
 footer{
     color: black;
@@ -165,11 +210,15 @@ main {
 }
 
 .call{
-    width: 50%;
-    float: right;
-    color: gray;
-    border: 2px solid #fff;
+    font-size: 30px;
+    width: 30%;
+    float: initial;
+    color: black;
+    border: 2px solid white;
+    background-color: violet;
     padding: 20px;
+    background: rgb(102,43,135);
+background: linear-gradient(90deg, rgba(102,43,135,1) 0%, rgba(163,138,163,1) 50%, rgba(185,187,187,1) 100%);
 }
 
 
@@ -493,12 +542,14 @@ main {
     background-image: url(../image/top3.jpeg);
     background-position: center;
     background-size: contain;
+    height: 80%;
 }
 
 .photo2 {
     background-image: url(../image/men.jpeg);
     background-position: center;
     background-size: contain;
+    height: 80%;
 }
 
 @media  only screen and (max-width:800) {
